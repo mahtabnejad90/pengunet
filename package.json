@@ -7,8 +7,9 @@
   },
   "type": "module",
   "scripts": {
-    "build": "tsc",
-    "start": "ts-node src/pengunet.ts"
+    "build": "./node_modules/.bin/tsc",
+    "start": "ts-node src/pengunet.ts",
+    "prepublishOnly": "npm run build"
   },
   "engines": {
     "node": ">=18"
@@ -25,6 +26,19 @@
   },
   "main": "dist/pengunet.js",
   "keywords": ["cli", "network", "monitoring", "playwright", "browser", "penguin"],
-  "author": "",
-  "license": "ISC"
+  "author": "Mahtab Nejad",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mahtabnejad90/pengunet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mahtabnejad90/pengunet/issues"
+  },
+  "homepage": "https://github.com/mahtabnejad90/pengunet#readme",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ]
 }
