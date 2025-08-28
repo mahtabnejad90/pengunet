@@ -1,0 +1,10 @@
+node_modules/
+*.log
+*.jsonl
+logs/
+user-data/
+dist/
+build/
+*.tsbuildinfo
+.DS_Store
+node_modules

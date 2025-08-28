@@ -1,0 +1,30 @@
+{
+  "name": "pengunet",
+  "version": "1.0.0",
+  "description": "CLI to log browser network requests (response, headers, initiator, timing) via Playwright + CDP",
+  "bin": {
+    "pengunet": "dist/pengunet.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/pengunet.ts"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/yargs": "^17.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "main": "dist/pengunet.js",
+  "keywords": ["cli", "network", "monitoring", "playwright", "browser", "penguin"],
+  "author": "",
+  "license": "ISC"
+}
