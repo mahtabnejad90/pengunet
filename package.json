@@ -1,6 +1,6 @@
 {
   "name": "pengunet",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "CLI to log browser network requests (response, headers, initiator, timing) via Playwright + CDP",
   "bin": {
     "pengunet": "dist/pengunet.js"
@@ -8,8 +8,11 @@
   "type": "module",
   "scripts": {
     "build": "./node_modules/.bin/tsc",
-    "start": "ts-node src/pengunet.ts",
+    "start": "tsx src/pengunet.ts",
     "prepublishOnly": "npm run build"
+  },
+  "ts-node": {
+    "esm": true
   },
   "engines": {
     "node": ">=18"
@@ -22,10 +25,18 @@
     "@types/node": "^20.0.0",
     "@types/yargs": "^17.0.0",
     "ts-node": "^10.9.0",
+    "tsx": "^4.20.5",
     "typescript": "^5.0.0"
   },
   "main": "dist/pengunet.js",
-  "keywords": ["cli", "network", "monitoring", "playwright", "browser", "penguin"],
+  "keywords": [
+    "cli",
+    "network",
+    "monitoring",
+    "playwright",
+    "browser",
+    "penguin"
+  ],
   "author": "Mahtab Nejad",
   "license": "ISC",
   "repository": {

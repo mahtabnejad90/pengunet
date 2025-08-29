@@ -5,13 +5,13 @@ A CLI tool to log browser network requests with detailed information including r
 ## Installation
 
 ```bash
-npm install
+npm install -g pengunet
 ```
 
 ## Usage
 
 ```bash
-npx ts-node src/pengunet.ts --url https://example.com
+pengunet --url https://example.com
 ```
 
 ### Options
@@ -28,13 +28,13 @@ npx ts-node src/pengunet.ts --url https://example.com
 
 ```bash
 # Basic usage
-npx ts-node src/pengunet.ts --url https://example.com
+pengunet --url https://example.com
 
 # Save output to file with response bodies
-npx ts-node src/pengunet.ts -u https://example.com -o logs.jsonl --body
+pengunet -u https://example.com -o logs.jsonl --body
 
 # Run with visible browser and persistent context
-npx ts-node src/pengunet.ts -u https://example.com --headed --persistContext ./user-data
+pengunet -u https://example.com --headed --persistContext ./user-data
 ```
 
 ## Output Format
